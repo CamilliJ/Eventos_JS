@@ -149,7 +149,7 @@ form{
 }
 
 
-.paragrafo{
+#paragrafo{
     display: none;
     margin-top: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -159,6 +159,10 @@ form{
     text-align: justify;
 }
 
+
+.sair{
+    text-align: center;
+}
 
 
 

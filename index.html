@@ -32,15 +32,15 @@
                 <form>
                     <div class="row">
                       <div class="col">
-                        <input type="text" class="form-control" placeholder="1° Número" id="num1" required>
+                        <input type="number" class="form-control" placeholder="1° Número" id="num1" required>
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control" placeholder="2° Número" id="num2" required>
+                        <input type="number" class="form-control" placeholder="2° Número" id="num2" required>
                       </div>
                     </div>
                   </form>
                     <div id="botaosomar">   
-                        <button type="button" class="btn" id="btnsomar" >Somar</button>
+                        <button type="button" class="btn" id="btnsomar" onclick="somar()">Somar</button>
                     </div>
 
                     <div id="resposta">   
@@ -65,7 +65,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body" id="corpo-modal">
+            <div class="modal-body" id="corpo-modal2">
                 <div class="bot">
             <button id="vermelho" class="botao"> VERMELHO </button>
             <button id="verde" class="botao"> VERDE </button>
@@ -92,7 +92,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body" id="corpo-modal">
+            <div class="modal-body" id="corpo-modal3">
                     <div class="bot">
                         <button id="hover-vermelho" class="botao"> VERMELHO </button>
                         <button id="hover-verde" class="botao"> VERDE </button>
@@ -111,6 +111,33 @@
     </div>
     
 
+    <div class="modal fade" id="ExemploModalCentralizado4" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Exercício 4</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id='modal4'>
+            <div class="form-group">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option value="red">Vermelho</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+                <option value="yellow">Amarelo</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
 
     <div class="modal fade" id="ExemploModalCentralizado5" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -123,10 +150,15 @@
             </div>
             <div class="modal-body">
                 <div class="par">
-                    <button id="mostrar" class="botao"> MOSTRAR </button>
+                    <button id="mostrar" class="botao" onclick="mostrar()"> MOSTRAR </button>
                 </div>
-                <div class="paragrafo">
+                <div id="paragrafo">
+                  <div>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                  <div class="sair">
+                    <button id="ocultar" class="botao" onclick="ocultar()"> OCULTAR </button>
+                  </div>
                 </div>
             </div>
             <div class="modal-footer">
